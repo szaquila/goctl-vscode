@@ -57,17 +57,24 @@
     "commands": [
       {
         "command": "goctl.generateFiles",
-        "title": "Generate"
+        "title": "代码生成"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "command": "goctl.generateFiles",
-          "group": "1_modification",
+          "group": "z_modification",
           "when": "resourceLangId == goctl"
         }
-      ]
+      ],
+			"editor/context": [
+				{
+          "command": "goctl.generateFiles",
+          "group": "z_modification",
+          "when": "resourceLangId == goctl"
+				}
+			]
     }
   },
   "scripts": {
